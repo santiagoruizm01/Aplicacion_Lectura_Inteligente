@@ -1,6 +1,10 @@
 import os
 #from dotenv import load_dotenv
 import streamlit as st
+import time
+import glob
+from gtts import gTTS
+from PIL import Image
 import PyPDF2
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
