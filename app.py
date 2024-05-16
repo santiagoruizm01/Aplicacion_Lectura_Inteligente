@@ -14,10 +14,6 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
-#import pickle5 as pickle
-#from pathlib import Path
-
-response = ""
 st.title('Chatea con tu PDF 💬')
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
@@ -60,8 +56,10 @@ if pdf is not None:
           response = chain.run(input_documents=docs, question=user_question)
           print(cb)
         st.write(response)
-
-text_2 = response # st.text_input("Ingrese el texto.")
+try:
+    os.mkdir("temp")
+ 
+text_2 = st.text_input("Ingrese el texto.")
 
 tld="es"
 
