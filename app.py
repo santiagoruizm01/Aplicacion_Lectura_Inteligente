@@ -29,7 +29,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-ke = st.subheader('Ingresa tu Clave')
+ke = st.header('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
 
