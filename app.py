@@ -22,7 +22,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #8a94f2;  /* Cambia este valor al color de fondo que desees */
+        background-color: #abafff;  /* Cambia este valor al color de fondo que desees */
     }
     </style>
     """,
