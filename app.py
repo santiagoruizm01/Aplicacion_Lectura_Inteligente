@@ -60,7 +60,7 @@ if pdf is not None:
           print(cb)
         st.write(response)
 
-text = st.text_input("Ingrese el texto.")
+text = response # st.text_input("Ingrese el texto.")
 
 tld="es"
 
