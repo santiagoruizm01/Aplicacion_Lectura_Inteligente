@@ -68,11 +68,11 @@ def text_to_speech(text, tld):
     
     tts = gTTS(text,"es", tld, slow=False)
     try:
-        my_file_name = text[0:20]
+        nombre_archivo = text[0:20]
     except:
-        my_file_name = "audio"
-    tts.save(f"temp/{my_file_name}.mp3")
-    return my_file_name, text
+        nombre_archivo = "audio"
+    tts.save(f"temp/{nombre_archivo}.mp3")
+    return nombre_archivo, text
 
 
 #display_output_text = st.checkbox("Verifica el texto")
