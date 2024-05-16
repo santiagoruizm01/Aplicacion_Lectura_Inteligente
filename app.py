@@ -17,6 +17,7 @@ from langchain.callbacks import get_openai_callback
 #import pickle5 as pickle
 #from pathlib import Path
 
+response = ""
 st.title('Chatea con tu PDF 💬')
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
