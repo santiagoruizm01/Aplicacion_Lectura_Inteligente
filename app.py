@@ -15,6 +15,7 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
 st.title('PDF Assistant')
+st.markdown("<h1 style='color: white;'>PDF Assistant</h1>", unsafe_allow_html=True) 
 st.header('Chatea con tu PDF 💬')
 image = Image.open('asistente_pdf.jpg')
 st.image (image, width=500)
