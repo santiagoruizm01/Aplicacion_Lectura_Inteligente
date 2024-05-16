@@ -50,7 +50,7 @@ if pdf is not None:
       knowledge_base = FAISS.from_texts(chunks, embeddings)
 
 # show user input
-      st.text_input("Escribe que quieres saber sobre el documento")
+      st.subheader("Escribe que quieres saber sobre el documento")
       user_question = st.text_input(" ")
       if user_question:
         docs = knowledge_base.similarity_search(user_question)
