@@ -58,6 +58,8 @@ if pdf is not None:
         st.write(response)
 try:
     os.mkdir("temp")
+except:
+    pass
  
 text_2 = st.text_input("Ingrese el texto.")
 
