@@ -16,7 +16,6 @@ from langchain.callbacks import get_openai_callback
 
 st.markdown("<h1 style='color: white;'>PDF Assistant</h1>", unsafe_allow_html=True) 
 st.markdown("<h2 style='color: white;'>Chatea con tu PDF 💬</h2>", unsafe_allow_html=True) 
-st.header('Chatea con tu PDF 💬')
 image = Image.open('asistente_pdf.jpg')
 st.image (image, width=500)
 st.markdown("""<style>.stApp {background-color: #4e93fa;  /* Cambia este valor al color de fondo que desees */}</style>""",unsafe_allow_html=True)
