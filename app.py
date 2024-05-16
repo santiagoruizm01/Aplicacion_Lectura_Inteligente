@@ -61,25 +61,25 @@ try:
 except:
     pass
  
-text_2 = st.text_input("Ingrese el texto.")
+# text_2 = st.text_input("Ingrese el texto.")
 
 tld="es"
 
 def text_to_speech(text, tld):
     
-    tts = gTTS(text_2,"es", tld, slow=False)
+    tts = gTTS(response,"es", tld, slow=False)
     try:
-        nombre_archivo = text_2[0:20]
+        nombre_archivo = response[0:20]
     except:
         nombre_archivo = "audio"
     tts.save(f"temp/{nombre_archivo}.mp3")
-    return nombre_archivo, text_2
+    return nombre_archivo, response
 
 
 #display_output_text = st.checkbox("Verifica el texto")
 
 if st.button("convertir"):
-    result, output_text = text_to_speech(text_2, tld)
+    result, output_text = text_to_speech(response, tld)
     audio_file = open(f"temp/{result}.mp3", "rb")
     audio_bytes = audio_file.read()
     st.markdown(f"## Tú audio:")
