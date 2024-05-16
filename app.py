@@ -16,6 +16,7 @@ from langchain.callbacks import get_openai_callback
 
 st.title('PDF Assistant')
 st.header('Chatea con tu PDF 💬')
+image = Image.open('asistente_pdf.jpg')
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
