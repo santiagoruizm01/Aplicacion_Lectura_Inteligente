@@ -18,7 +18,7 @@ st.title('PDF Assistant')
 st.header('Chatea con tu PDF 💬')
 image = Image.open('asistente_pdf.jpg')
 st.image (image, width=500)
-st.markdown("""<style>.stApp {background-color: #888efc;  /* Cambia este valor al color de fondo que desees */}</style>""",unsafe_allow_html=True)
+st.markdown("""<style>.stApp {background-color: #4e93fa;  /* Cambia este valor al color de fondo que desees */}</style>""",unsafe_allow_html=True)
 
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
