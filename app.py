@@ -15,7 +15,7 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
 st.markdown("<h1 style='color: white;'>PDF Assistant</h1>", unsafe_allow_html=True) 
-st.markdown("<h3 style= 'color: white;'> Bienvenido Estudiante EAFITENSE, este es un espacio de aprendizaje en el cual podrás encontrar información clave dentro de tus Pdf's muy fácil y rápido</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style= 'color: white;'> Bienvenido Estudiante EAFITENSE, este es un espacio de aprendizaje en el cual podrás encontrar información clave dentro de tus Pdf's muy fácil y rápido</h3>", unsafe_allow_html=True)
 st.markdown("<h2 style='color: white;'>Chatea con tu PDF 💬</h2>", unsafe_allow_html=True) 
 image = Image.open('asistente_pdf.jpg')
 st.image (image, width=500)
