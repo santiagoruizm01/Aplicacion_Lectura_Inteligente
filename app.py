@@ -15,11 +15,11 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
 st.markdown("<h1 style='color: white;'>PDF Assistant</h1>", unsafe_allow_html=True) 
+st.text_input('Bienvenido Estudiante EAFITENSE, este es un espacio de aprendizaje en el cual podrás encontrar información clave dentro de tus Pdf's muy fácil y rápido')
 st.markdown("<h2 style='color: white;'>Chatea con tu PDF 💬</h2>", unsafe_allow_html=True) 
 image = Image.open('asistente_pdf.jpg')
 st.image (image, width=500)
 st.markdown("""<style>.stApp {background-color: #4e93fa;  /* Cambia este valor al color de fondo que desees */}</style>""",unsafe_allow_html=True)
-
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
